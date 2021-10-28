@@ -1,6 +1,6 @@
 node default {
-  file {'/root/README':
-    ensure => file,
-    content => 'This is a README',
-  }
+}
+
+node 'pupper.local' {
+  include role::master_server
 }
