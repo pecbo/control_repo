@@ -1,6 +1,6 @@
 node default {
 }
 
-node 'pupper.local' {
+node 'puppet.local' {
   include role::master_server
 }
