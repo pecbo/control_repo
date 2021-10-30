@@ -5,7 +5,7 @@ node 'puppet.local' {
   include role::master_server
   file { '/root/README':
     ensure => file,
-    content => "Welcome to ${fqdn} running on ${os.family}",
+    content => "Welcome to ${fqdn}",
   }
 }
 
