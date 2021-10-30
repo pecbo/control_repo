@@ -3,6 +3,10 @@ node default {
 
 node 'puppet.local' {
   include role::master_server
+  file { '/root/README':
+    ensure => file,
+    content => $os.family,
+  }
 }
 
 node /^web/ {
